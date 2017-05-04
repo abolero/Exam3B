@@ -14,6 +14,9 @@
                     <h1>Customers</h1>
                     <%= table %>
 
+                    <br><br>
+                    
+                    <a href="add">Add a Customer</a>
 
     </body>
 </html>
