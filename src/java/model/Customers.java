@@ -8,7 +8,7 @@ public class Customers {
     private String addr1;
     private String addr2;
     private String city;
-    private String state;
+    private String cstate;
     private String zip;
     private String emailAddr;
     
@@ -19,19 +19,19 @@ public class Customers {
         this.addr1 = "";
         this.addr2 = "";
         this.city = "";
-        this.state = "";
+        this.cstate = "";
         this.zip = "";
         this.emailAddr = "";
     }
 
-    public Customers(int custID, String firstName, String lastName, String addr1, String addr2, String city, String state, String zip, String emailAddr) {
+    public Customers(int custID, String firstName, String lastName, String addr1, String addr2, String city, String cstate, String zip, String emailAddr) {
         this.custID = custID;
         this.firstName = firstName;
         this.lastName = lastName;
         this.addr1 = addr1;
         this.addr2 = addr2;
         this.city = city;
-        this.state = state;
+        this.cstate = cstate;
         this.zip = zip;
         this.emailAddr = emailAddr;
     }
@@ -85,11 +85,11 @@ public class Customers {
     }
 
     public String getState() {
-        return state;
+        return cstate;
     }
 
-    public void setState(String state) {
-        this.state = state;
+    public void setState(String cstate) {
+        this.cstate = cstate;
     }
 
     public String getZip() {
@@ -110,7 +110,7 @@ public class Customers {
 
     @Override
     public String toString() {
-        return "Customers{" + "custID=" + custID + ", firstName=" + firstName + ", lastName=" + lastName + ", addr1=" + addr1 + ", addr2=" + addr2 + ", city=" + city + ", state=" + state + ", zip=" + zip + ", emailAddr=" + emailAddr + '}';
+        return "Customers{" + "custID=" + custID + ", firstName=" + firstName + ", lastName=" + lastName + ", addr1=" + addr1 + ", addr2=" + addr2 + ", city=" + city + ", cstate=" + cstate + ", zip=" + zip + ", emailAddr=" + emailAddr + '}';
     }
     
     
