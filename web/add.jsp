@@ -3,11 +3,18 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Add A New Team</title>
+        <title>Add A New Customer</title>
         <link rel="stylesheet" type="text/css" href="3bstyle.css" />
     </head>
     <body>
 
+
+        <div class="wrap">
+
+            <%@ include file="includes/header.jsp" %>
+            <%@ include file="includes/menu.jsp" %>
+
+            <div class="main"> 
 
                 <h1>Add A New Customer</h1>
 
@@ -54,6 +61,12 @@
                     <br>
                     <input type="submit" name="submit" value="Submit" />
                 </form>
+
+            </div> <!--close main-->
+
+            <%@ include file="includes/footer.jsp" %>
+
+        </div> <!--close wrap-->
 
     </body>
 </html>

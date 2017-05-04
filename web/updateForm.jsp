@@ -10,7 +10,14 @@
         <title>Update A Customer</title>
     </head>
     <body>
-       
+
+        <div class="wrap">
+
+            <%@ include file="includes/header.jsp" %>
+            <%@ include file="includes/menu.jsp" %>
+
+            <div class="main"> 
+
                 <h1>Update A Customer Record</h1>
 
                 <form name="updateForm" action="updateCust" method="get">
@@ -64,5 +71,10 @@
                 </form>
 
 
+            </div> <!--close main-->
+
+            <%@ include file="includes/footer.jsp" %>
+
+        </div> <!--close wrap-->
     </body>
 </html>

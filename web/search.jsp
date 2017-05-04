@@ -8,6 +8,13 @@
     </head>
     <body>
 
+        <div class="wrap">
+
+            <%@ include file="includes/header.jsp" %>
+            <%@ include file="includes/menu.jsp" %>
+
+            <div class="main">
+
                 <h1>Search Customers</h1>
 
                 <form name="searchForm" action="search" method="get">
@@ -20,5 +27,10 @@
 
                 </form>
 
+            </div> <!--close main-->
+
+            <%@ include file="includes/footer.jsp" %>
+
+        </div> <!--close wrap-->
     </body>
 </html>

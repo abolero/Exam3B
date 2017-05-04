@@ -10,15 +10,25 @@
     <% String table = (String) request.getAttribute("table");%>
 
     <body>
+        <div class="wrap">
 
-                    <h1>Customers</h1>
-                    <%= table %>
+            <%@ include file="includes/header.jsp" %>
+            <%@ include file="includes/menu.jsp" %>
 
-                    <br><br>
-                    
-                    <a href="add">Add a Customer</a>
-                    <br><br>
-                    <a href="search.jsp">Search Customers</a>
+            <div class="main">
+                <h1>Customers</h1>
+                <%= table%>
 
+                <br><br>
+
+                <a href="add">Add a Customer</a>
+                <br><br>
+                <a href="search.jsp">Search Customers</a>
+
+            </div> <!--close main-->
+
+            <%@ include file="includes/footer.jsp" %>
+
+        </div> <!--close wrap-->
     </body>
 </html>

@@ -3,13 +3,25 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="3bstyle.css" />
         <title>Customers</title>
     </head>
     <body>
-        <h1>Customers Database</h1>
-        
-        <a href="read">View All Customers</a>
-        <br><br>
-        <a href="search.jsp">Search Customers</a>
+        <div class="wrap">
+            
+            <%@ include file="includes/header.jsp" %>
+            <%@ include file="includes/menu.jsp" %>
+            
+            <div class="main">
+                <h1>Customers Database</h1>
+
+                <a href="read">View All Customers</a>
+                <br><br>
+                <a href="search.jsp">Search Customers</a>
+            </div> <!--close main-->
+
+             <%@ include file="includes/footer.jsp" %>
+            
+        </div> <!--close wrap-->
     </body>
 </html>

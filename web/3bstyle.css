@@ -1,1 +1,68 @@
+html{height:100%;}
+
 input[readonly] {background-color:gray;}
+
+body{ background-color: gray; height:100%;}
+
+.wrap{text-align:center; width:95%; height: 100%; margin: 0 auto; border: 5px solid black; margin-top:10px;}
+
+.header{background-color:blue; text-align:left; padding:10px;}
+.headerSearch{ height: 15px; padding-top:25px; width: 40%; float:right;}
+.headerText{float:left; background-color:teal;}
+
+.searchBar{width:60%; height:25px;}
+.searchButton{width:30%; height:30px;}
+
+.main{background-color:orange; height:75%; text-align:left; padding:10px;}
+
+.footer{background-color:yellow; text-align:left; padding:10px;}
+
+.tbl{border:3px solid black;border-collapse: collapse;}
+th{padding-right:20px;padding-left: 20px; padding-bottom:8px;}
+td{padding-right:20px; padding-left:20px; padding-bottom:5px;}
+tr{border:1px solid black;}
+
+/*Fat Erik's Pipelist*/
+/*http://css.maxdesign.com.au/listamatic/horizontal32.htm*/
+.navcontainer { background-color:white; padding:2px; width:100%; text-align:left;}
+
+.navlist
+{
+list-style: none;
+padding: 0;
+margin: 0;
+font-family: Tahoma;
+font-size:20px;
+}
+
+.navlist li
+{
+display: inline;
+padding: 0;
+margin: 0;
+}
+
+.navlist li:before { content: "| "; }
+.navlist li:first-child:before { content: ""; }
+
+/*IE workaround*/
+/*All IE browsers*/
+* html #navlist li
+{
+border-left: 1px solid black;
+padding: 0 0.4em 0 0.4em;
+margin: 0 0.4em 0 -0.4em;
+}
+
+/*Win IE browsers - hide from Mac IE\*/
+* html #navlist { height: 1%; }
+
+* html #navlist li
+{
+display: block;
+float: left;
+}
+
+/*End hide*/
+/*Mac IE 5*/
+* html #navlist li:first-child { border-left: 0; }
