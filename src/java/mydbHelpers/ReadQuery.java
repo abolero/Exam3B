@@ -143,7 +143,10 @@ public class ReadQuery {
                 table += "</td>";
                 
                 table += "<td>";
-                table += cust.getAddr2();
+                if(cust.getAddr2()==null)
+                    table += "";
+                else
+                    table += cust.getAddr2();
                 table += "</td>";
                 
                 table += "<td>";
@@ -163,7 +166,7 @@ public class ReadQuery {
                 table += "</td>";
                 
                 table += "<td>";
-                table += "<a href=update?custID=" + cust.getCustID() + "> Update </a>" + " -- " + "<a href=delete?custID=" + cust.getCustID() + "> Delete </a>";
+                table += "<a href=update?custID=" + cust.getCustID() + "> Update </a>" + " ~ " + "<a href=delete?custID=" + cust.getCustID() + "> Delete </a>";
                 table += "</td>";
                 
                 table += "</tr>";

@@ -1,11 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package controller;
 
-import mydbHelpers.AddQuery;
+import mydbHelpers.UpdateQuery;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
@@ -16,12 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import model.Customers;
 
-/**
- *
- * @author Drew
- */
-@WebServlet(name = "AddServlet", urlPatterns = {"/addCust"})
-public class AddServlet extends HttpServlet {
+@WebServlet(name = "UpdateServlet", urlPatterns = {"/updateCust"})
+public class UpdateServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -40,10 +31,10 @@ public class AddServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet AddServlet</title>");            
+            out.println("<title>Servlet UpdateServlet</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet AddServlet at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet UpdateServlet at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -77,7 +68,8 @@ public class AddServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-            //get the data
+            //get the form data and set up a Customer object
+            int custID = Integer.parseInt(request.getParameter("id"));
             String firstName = request.getParameter("firstName");
             String lastName = request.getParameter("lastName");
             String addr1 = request.getParameter("addr1");
@@ -87,8 +79,8 @@ public class AddServlet extends HttpServlet {
             String zip = request.getParameter("zip");
             String emailAddr = request.getParameter("emailAddr");
             
-            //set up a cust object
             Customers cust = new Customers();
+            cust.setCustID(custID);
             cust.setFirstName(firstName);
             cust.setLastName(lastName);
             cust.setAddr1(addr1);
@@ -98,18 +90,17 @@ public class AddServlet extends HttpServlet {
             cust.setZip(zip);
             cust.setEmailAddr(emailAddr);
             
-            //set up an addQuery object
-            AddQuery aq = new AddQuery();
+            //create an UpdateQuery object and use it to update the customer
+            UpdateQuery uq = new UpdateQuery();
+            uq.doUpdate(cust);
             
-            //pass the team to addQuery to add to the database
-            aq.doAdd(cust);
-            
-            //pass execution control to the ReadServlet
+            //pass control to the ReadServlet
             String url = "/read";
             
             RequestDispatcher dispatcher = request.getRequestDispatcher(url);
-            dispatcher.forward (request, response);
-        
+            dispatcher.forward(request, response);
+            
+            
     }
 
     /**
