@@ -1,6 +1,11 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package controller;
 
-import mydbHelpers.SearchQuery;
+import mydbHelpers.ReadQuery2;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
@@ -10,8 +15,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "SearchServlet", urlPatterns = {"/search"})
-public class SearchServlet extends HttpServlet {
+/**
+ *
+ * @author Drew
+ */
+@WebServlet(name = "Read2", urlPatterns = {"/read2"})
+public class Read2 extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -30,10 +39,10 @@ public class SearchServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet SearchServlet</title>");            
+            out.println("<title>Servlet Read</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet SearchServlet at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet Read at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -52,6 +61,7 @@ public class SearchServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
+            //Pass execution on to doPost
             doPost(request, response);
     }
 
@@ -66,25 +76,21 @@ public class SearchServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-       
-            //Get the text to search
-            String name = request.getParameter("searchVal");
-            
-            //Create a SearchQuery helper object
-            SearchQuery sq = new SearchQuery();
-            
-            //Get the HTML table from the SearchQuery object
-            sq.doSearch(name);
-            String table = sq.getHTMLTable();
-            
-            //Pass execution control to read.jsp along with the table
-            request.setAttribute("table", table);
-            String url = "/read2.jsp";
-            
-            RequestDispatcher dispatcher = request.getRequestDispatcher(url);
-            dispatcher.forward(request, response);
-            
-            
+                
+                //Create a ReadQuery helper object
+                ReadQuery2 rq = new ReadQuery2();
+                
+                //Get the HTML table from the ReadQuery object
+                rq.doRead();
+                String table = rq.getHTMLTable();
+                
+                //Pass execution control to read.jsp along with the table
+                request.setAttribute("table", table);
+                String url = "/read2.jsp";
+                
+                RequestDispatcher dispatcher = request.getRequestDispatcher(url);
+                dispatcher.forward(request, response);
+                
     }
 
     /**

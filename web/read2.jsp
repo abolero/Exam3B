@@ -19,10 +19,6 @@
                 <h1>Customers</h1>
                 <%= table%>
 
-                <br><br>
-
-                <a href="add">Add a Customer</a>
-
             </div> <!--close main-->
 
             <%@ include file="includes/footer.jsp" %>

@@ -20,16 +20,18 @@
 
             <label>Username</label>
             
-            <input type="text" name="username" value="" />
+            <input type="text" name="username" value="" required data-validation-required-message="Please enter username."/>
 
             <br><br>
             
             <label>Password</label>
             
-            <input type="text" name="password" value="" />
+            <input type="password" name="password" value="" required data-validation-required-message="Please enter password." />
             
             <br><br>
 
+            <a href="admin.jsp">Log-In</a>
+            <br>
             <input type="submit" name="submit" value="Log-In" />
 
         </form>
