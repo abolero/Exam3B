@@ -3,12 +3,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Log-In</title>
         <link rel="stylesheet" type="text/css" href="3bstyle.css" />
     </head>
-
-    <% String table = (String) request.getAttribute("table");%>
-
     <body>
         <div class="wrap">
 
@@ -16,13 +13,27 @@
             <%@ include file="includes/menu.jsp" %>
 
             <div class="main">
-                <h1>Customers</h1>
-                <%= table%>
+                
+        <h1>Log-In</h1>
+        
+        <form name="loginForm" action="login" method="get">
 
-                <br><br>
+            <label>Username</label>
+            
+            <input type="text" name="username" value="" />
 
-                <a href="add">Add a Customer</a>
+            <br><br>
+            
+            <label>Password</label>
+            
+            <input type="text" name="password" value="" />
+            
+            <br><br>
 
+            <input type="submit" name="submit" value="Log-In" />
+
+        </form>
+        
             </div> <!--close main-->
 
             <%@ include file="includes/footer.jsp" %>

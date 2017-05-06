@@ -16,8 +16,6 @@
                 <h1>Customers Database</h1>
 
                 <a href="read">View All Customers</a>
-                <br><br>
-                <a href="search.jsp">Search Customers</a>
             </div> <!--close main-->
 
              <%@ include file="includes/footer.jsp" %>

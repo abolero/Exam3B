@@ -151,8 +151,8 @@ public class SearchQuery {
                 table += "</td>";
                 
                 table += "<td>";
-                if(cust.getAddr2()==null)
-                    table += "";
+                if(cust.getAddr2().equals("null"))
+                    table += "N/A";
                 else
                     table += cust.getAddr2();
                 table += "</td>";
