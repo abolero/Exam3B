@@ -4,6 +4,10 @@ input[readonly] {background-color:gray;}
 
 body{ background-color: black; height:100%;}
 
+h1,a{font-family:Tahoma;}
+a{color:#B6E61B;}
+li{color:white;}
+
 .wrap{text-align:center; width:98%; height: 98%; margin: 0 auto; border: 3px solid #B6E61B;}
 
 .header{background-color:#949F73; text-align:left; padding:10px;}
@@ -15,16 +19,42 @@ body{ background-color: black; height:100%;}
 
 .main{background-color:gray; height:74%; text-align:left; padding:10px;}
 
-.footer{background-color:#949F73; text-align:left; padding:10px;}
+.addForm{background-color:#949F73; margin: 0 auto; width: 700px; height:80%; text-align:center; padding:25px; border:1px solid black;}
+.adminPage{margin:0 auto; text-align: center; font-size:24pt;}
+.updateForm{background-color:#949F73; margin: 0 auto; width:750px; height: 80%; text-align:center; padding: 25px; border:1px solid black;}
+
+.footer{background-color:#949F73; text-align:left; padding:9px;}
 
 .tbl{border:3px solid black;border-collapse: collapse;}
-th{padding-right:20px;padding-left: 20px; padding-bottom:8px;}
-td{padding-right:20px; padding-left:20px; padding-bottom:5px;}
+th{padding-right:20px;padding-left: 20px; padding-bottom:8px; background-color:#B6E51B; color:black; text-align:center;}
+td{padding-right:20px; padding-left:20px; padding-bottom:5px;text-align: center; vertical-align: middle;}
 tr{border:1px solid black;}
-
+tr:nth-child(odd) {
+    background-color: black;
+    color: #B6E51B;
+}
+tr:nth-child(odd):hover {
+    background-color: gray;
+}
+tr:nth-child(even) {
+    background-color: black;
+    color: #B6E51B;
+}
+tr:nth-child(even):hover {
+    background-color: gray;
+}
+table, td, th {
+    border: 3px solid #B6E51B;
+    padding-right:15px;
+    padding-left: 15px;
+    padding-top:5px;
+    padding-bottom:5px;
+    font-family: Tahoma;
+}
+label{font-family: Tahoma;}
 /*Fat Erik's Pipelist*/
 /*http://css.maxdesign.com.au/listamatic/horizontal32.htm*/
-.navcontainer { background-color:white; padding:2px; width:99.7%; text-align:center;}
+.navcontainer { background-color:black; padding:2px; width:99.7%; text-align:center;}
 
 .navlist
 {

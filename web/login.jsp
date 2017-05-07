@@ -16,7 +16,7 @@
                 
         <h1>Log-In</h1>
         
-        <form name="loginForm" action="login" method="get">
+        <form name="loginForm" action="admin.jsp" method="get">
 
             <label>Username</label>
             
@@ -30,9 +30,7 @@
             
             <br><br>
 
-            <a href="admin.jsp">Log-In</a>
-            <br>
-            <input type="submit" name="submit" value="Log-In" />
+            <input type="submit" name="submit" value="Log-In">
 
         </form>
         

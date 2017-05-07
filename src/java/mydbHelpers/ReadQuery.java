@@ -143,7 +143,7 @@ public class ReadQuery {
                 table += "</td>";
                 
                 table += "<td>";
-                if(cust.getAddr2().equals("null"))
+                if(cust.getAddr2()==null)
                     table += "N/A";
                 else
                     table += cust.getAddr2();

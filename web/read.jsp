@@ -13,7 +13,7 @@
         <div class="wrap">
 
             <%@ include file="includes/header.jsp" %>
-            <%@ include file="includes/menu.jsp" %>
+            <%@ include file="includes/menu2.jsp" %>
 
             <div class="main">
                 <h1>Customers</h1>

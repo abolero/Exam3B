@@ -12,40 +12,36 @@
         <div class="wrap">
 
             <%@ include file="includes/header.jsp" %>
-            <%@ include file="includes/menu.jsp" %>
+            <%@ include file="includes/menu2.jsp" %>
 
             <div class="main"> 
+            <div class="addForm">
 
                 <h1>Add A New Customer</h1>
 
                 <form name="addForm" action="addCust" method="get">
-                    <label>First Name:</label>
-                    <br>
+                    <label>First Name: </label>
+                    &nbsp;
                     <input type="text" name="firstName" value="" required data-validation-required-message="Please enter first name." pattern="[a-zA-Z]+(['-][a-zA-Z]+)*" autofocus required title="Alphabetical characters only."/>
-                    <br>
-                    <br>
-                    <label>Last Name:</label>
-                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <label>Last Name: </label>
+                    &nbsp;
                     <input type="text" name="lastName" value="" required data-validation-required-message="Please enter last name." pattern="[a-zA-Z]+(['-][a-zA-Z]+)*" autofocus required title="Alphabetical characters only."/>
-                    <br>
-                    <br>
+                    <br><br><br>
                     <label>Address 1:</label>
-                    <br>
+                    &nbsp;&nbsp;&nbsp;
                     <input type="text" name="addr1" value="" required data-validation-required-message="Please enter address." pattern="\d+\s{1}\S+\s?\S*\s{1}([a-zA-Z]{2,}[.]?)" autofocus required title="Address should be in the following format: 123 Main St"/>
-                    <br>
-                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <label>Address 2:</label>
-                    <br>
+                    &nbsp;&nbsp;&nbsp;
                     <input type="text" name="addr2" value="" />
-                    <br>
-                    <br>
+                    <br><br><br>
                     <label>City:</label>
-                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <input type="text" name="city" value="" required data-validation-required-message="Please enter city." pattern="[a-zA-Z]+\s?[a-zA-Z]*\s?[a-zA-Z]*\s?[a-zA-Z]*\s?[a-zA-Z]*" autofocus required title="Alphabetical characters only."/>
-                    <br>
-                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <label>State:</label>
-                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
                     <select name="cstate" value=" " required data-validation-required-message="Please select state.">
                         <option value="" style="display:none;"></option>
                         <option value=" "> </option>
@@ -99,21 +95,20 @@
                         <option value="WI">WI</option>
                         <option value="WV">WV</option>
                         <option value="WY">WY</option>
-                    </select><br>
-                    <br>
+                    </select>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <label>Zip:</label>
-                    <br>
+                    &nbsp;
                     <input type="text" name="zip" value="" required data-validation-required-message="Please enter zip code." pattern="\d{5}" autofocus required title="Zip Code should be 5 digits."/>
-                    <br>
-                    <br>
-                    <label>Email</label>
-                    <br>
+                    <br><br><br>
+                    <label>Email:  </label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <input type="text" name="emailAddr" value="" required data-validation-required-message="Please enter email address." pattern="\S+@\S+[.][a-zA-Z]{2,}" autofocus required title="Email should be in the following format: abc123@email.com"/>
                     <br>
                     <br>
                     <input type="submit" name="submit" value="Submit" />
                 </form>
-
+            </div> <!--close addForm-->
             </div> <!--close main-->
 
             <%@ include file="includes/footer.jsp" %>

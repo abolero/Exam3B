@@ -10,9 +10,10 @@
         <div class="wrap">
 
             <%@ include file="includes/header.jsp" %>
-            <%@ include file="includes/menu.jsp" %>
+            <%@ include file="includes/menu2.jsp" %>
 
             <div class="main"> 
+            <div class="adminPage">
                 
                 <h1>Administrative Page</h1>
                 
@@ -21,7 +22,7 @@
                 <a href="add">Add a Customer to Database</a>
                 <br><br>
                 <a href="index.jsp">Log Out</a>
-    
+            </div> <!--close adminPage-->
             </div> <!--close main-->
 
             <%@ include file="includes/footer.jsp" %>
