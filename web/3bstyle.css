@@ -10,7 +10,7 @@ li{color:white;}
 
 .wrap{text-align:center; width:98%; height: 98%; margin: 0 auto; border: 3px solid #B6E61B;}
 
-.header{background-color:#949F73; text-align:left; padding:10px;}
+.header{background-color:#6C8223; text-align:left; padding:10px;}
 .headerSearch{ height: 15px; padding-top:25px; width: 40%; float:right;}
 .headerText{float:left;}
 
@@ -19,11 +19,14 @@ li{color:white;}
 
 .main{background-color:gray; height:74%; text-align:left; padding:10px;}
 
-.addForm{background-color:#949F73; margin: 0 auto; width: 700px; height:80%; text-align:center; padding:25px; border:1px solid black;}
-.adminPage{margin:0 auto; text-align: center; font-size:24pt;}
-.updateForm{background-color:#949F73; margin: 0 auto; width:750px; height: 80%; text-align:center; padding: 25px; border:1px solid black;}
+input[type=submit]{background-color:#B6E61B; text-align: center; border:2px solid black; font-family:Tahoma; padding: 5px; -webkit-border-radius:10px;}
+input[type=submit]:hover{background-color:black; color:#B6E61B; border:2px solid #B6E61B; transition-duration:0.4s;}
 
-.footer{background-color:#949F73; text-align:left; padding:9px;}
+.addForm{background-color:#6C8223; margin: 0 auto; width: 700px; height:80%; text-align:center; padding:25px; border:1px solid black;}
+.adminPage{margin:0 auto; text-align: center; font-size:24pt;}
+.updateForm{background-color:#6C8223; margin: 0 auto; width:750px; height: 80%; text-align:center; padding: 25px; border:1px solid black;}
+
+.footer{background-color:#6C8223; text-align:left; padding:9px;}
 
 .tbl{border:3px solid black;border-collapse: collapse;}
 th{padding-right:20px;padding-left: 20px; padding-bottom:8px; background-color:#B6E51B; color:black; text-align:center;}

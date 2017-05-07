@@ -11,7 +11,7 @@
 
         <div class="wrap">
 
-            <%@ include file="includes/header.jsp" %>
+            <%@ include file="includes/header2.jsp" %>
             <%@ include file="includes/menu2.jsp" %>
 
             <div class="main"> 

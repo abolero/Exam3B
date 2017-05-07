@@ -13,7 +13,7 @@
 
         <div class="wrap">
 
-            <%@ include file="includes/header.jsp" %>
+            <%@ include file="includes/header2.jsp" %>
             <%@ include file="includes/menu2.jsp" %>
 
             <div class="main"> 
@@ -44,15 +44,15 @@
                     <input type="text" name="addr2" value="<%= cust.getAddr2()%>" />
                     <br><br><br>
                     <label>City:</label>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <input type="text" name="city" value="<%= cust.getCity()%>" />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <label>State:</label>
                     &nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="text" name="cstate" value="<%= cust.getState()%>" />
+                    <input style="width:26px" type="text" name="cstate" value="<%= cust.getState()%>" />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <label>Zip:</label>
-                    &nbsp;
+                    &nbsp;&nbsp;
                     <input type="text" name="zip" value="<%= cust.getZip()%>" />
                     <br><br><br>
                     <label>Email:</label>

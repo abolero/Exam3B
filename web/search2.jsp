@@ -3,25 +3,29 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>DB, Inc. Customers</title>
         <link rel="stylesheet" type="text/css" href="3bstyle.css" />
+        <title>Search Customers</title>
     </head>
-
-    <% String table = (String) request.getAttribute("table");%>
-
     <body>
+
         <div class="wrap">
 
             <%@ include file="includes/header2.jsp" %>
             <%@ include file="includes/menu2.jsp" %>
 
             <div class="main">
-                <h1>Customers</h1>
-                <%= table%>
 
-                <br><br>
+                <h1>Search Customers</h1>
 
-                <a href="add">Add a Customer</a>
+                <form name="searchForm2" action="search2" method="get">
+
+                    <input type="text" name="searchVal2" value="" />
+
+                    <br>
+
+                    <input type="submit" name="submit" value="Search" />
+
+                </form>
 
             </div> <!--close main-->
 
