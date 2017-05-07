@@ -20,11 +20,12 @@ li{color:white;}
 .main{background-color:gray; height:74%; text-align:left; padding:10px;}
 
 input[type=submit]{background-color:#B6E61B; text-align: center; border:2px solid black; font-family:Tahoma; padding: 5px; -webkit-border-radius:10px;}
-input[type=submit]:hover{background-color:black; color:#B6E61B; border:2px solid #B6E61B; transition-duration:0.4s;}
+input[type=submit]:hover{background-color:black; color:#B6E61B; border:2px solid #B6E61B; transition-duration:0.7s;}
 
 .addForm{background-color:#6C8223; margin: 0 auto; width: 700px; height:80%; text-align:center; padding:25px; border:1px solid black;}
 .adminPage{margin:0 auto; text-align: center; font-size:24pt;}
 .updateForm{background-color:#6C8223; margin: 0 auto; width:750px; height: 80%; text-align:center; padding: 25px; border:1px solid black;}
+.loginForm{font-weight: bold; background-color:#6C8223; margin: 0 auto; width:500px; height: 50%; text-align:center; padding: 25px; border:1px solid black;}
 
 .footer{background-color:#6C8223; text-align:left; padding:9px;}
 
